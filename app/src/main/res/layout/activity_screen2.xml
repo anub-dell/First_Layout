@@ -4,21 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffe4b5"
+    android:padding="16dp"
     tools:context=".screen2">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="good morning"
+        android:textColor="#8b4513"
+        android:textSize="60dp"
+        android:fontFamily="cursive"
         android:id="@+id/p1"/>
 <EditText
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="age:"
+    android:textSize="50dp"
+    android:background="#ffe4b5"
+    android:textColor="#8b4513"
+    android:fontFamily="cursive"
     android:id="@+id/p2"/>
-    <Button
+
+
+    <ImageButton
+        android:id="@+id/First_Image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="press"
-        android:id="@+id/b2"
-        />
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffe4b5"
+        android:maxWidth="20dp"
+        android:maxHeight="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/click_here" />
+
 </LinearLayout>

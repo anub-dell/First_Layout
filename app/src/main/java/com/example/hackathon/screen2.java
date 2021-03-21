@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class screen2 extends AppCompatActivity {
     TextView tv2;
     EditText ev2;
-    Button b2;
+    ImageView I;
 
 
     @Override
@@ -21,13 +22,14 @@ public class screen2 extends AppCompatActivity {
         setContentView(R.layout.activity_screen2);
         tv2=findViewById(R.id.p1);
         ev2=findViewById(R.id.p2);
-        b2=findViewById(R.id.b2);
+        I=findViewById(R.id.First_Image);
+
 
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT,"same here");
+        sendIntent.putExtra(Intent.EXTRA_TEXT,"padhai karle");
         sendIntent.setType("text/plain");
-        b2.setOnClickListener(new View.OnClickListener() {
+        I.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent shareIntent = Intent.createChooser(sendIntent, null);
